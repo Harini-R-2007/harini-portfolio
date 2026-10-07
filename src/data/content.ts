@@ -1,0 +1,100 @@
+// Edit your details here. The whole site reads from this file.
+export const profile = {
+  name: 'Harini R',
+  headline: 'B.E. Computer Science student and full-stack developer',
+  intro: 'I study Computer Science at IFET College of Engineering and build web and AI projects with Python, Java and React. I am looking for an internship and placement where I can keep learning on real products.',
+  email: 'harinisekar205@gmail.com',
+  location: 'Cuddalore, Tamil Nadu',
+  linkedin: 'https://linkedin.com/in/harini86',
+  github: 'https://github.com/Harini-R-2007',
+  photo: '/images/profile.jpg',
+  resume: '/resume/Harini_R_Resume.pdf',
+  about: [
+    'I am a B.E. Computer Science and Engineering student (CGPA 8.8 up to the 4th semester) with working knowledge of Python, Java, C and web development.',
+    'I have completed a Full Stack Developer internship at MindfulAI Technologies and a one-month Python internship at NextGen Solutions. I have also taken part in hackathons including HackIndia and Smart India Hackathon internal rounds.',
+    'My interests are full-stack development, data management and data analytics.',
+  ],
+}
+export const skills = [
+  { group: 'Programming', items: ['Python', 'C', 'Java'] },
+  { group: 'Web', items: ['HTML', 'CSS', 'JavaScript'] },
+  { group: 'Frameworks and platforms', items: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Express.js', 'Flask', 'Firebase Authentication', 'Firebase Firestore', 'XGBoost', 'Gemini', 'Render', 'Vercel'] },
+  { group: 'Databases', items: ['SQL (Basic)', 'DBMS'] },
+  { group: 'Networking and hardware', items: ['Computer networking fundamentals (Cisco CCNA)', 'Computer hardware basics'] },
+  { group: 'Tools', items: ['GitHub', 'VS Code', 'MS Word', 'MS PowerPoint', 'MS Excel'] },
+]
+export const projects: { name: string; event?: string; desc: string; tech: string[]; role: string; team?: string; live?: string; github?: string; demo?: string; featured?: boolean }[] = [
+  { name: 'AgentHub', event: 'HackIndia Hackathon', featured: true,
+    desc: 'An AI-powered platform where users can discover AI agents by category and where agents can collaborate.',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Gemini', 'Firebase Authentication', 'Firebase Firestore', 'Express.js'],
+    role: 'Team Lead. Led the team and contributed to development and integration.', team: 'Pashni, Gayathri, Kanalakshmi',
+    github: 'https://github.com/Harini-R-2007/agenthubnew' },
+  { name: 'AI Hospital Command Center', event: 'SIMATS Project',
+    desc: 'A full-stack AI system that predicts hospital patient admissions using XGBoost, trained on 1,094 days of synthetic hospital data (not real patient records). Features include Explainable AI, Emergency Mode and What-If Simulation.',
+    tech: ['XGBoost', 'React', 'Flask', 'Render', 'Vercel'],
+    role: 'Team Lead. Led the team and worked with them on development.',
+    live: 'https://ai-hospital-command-center-sepia.vercel.app/', github: 'https://github.com/Harini-R-2007/-ai-hospital-command-center' },
+  { name: 'Online Parking Reservation System with AI Chatbot',
+    desc: 'A web-based parking reservation system with an integrated AI chatbot that helps users through the reservation process.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    role: 'Team Lead. Led the team and worked with them on development.',
+    github: 'https://github.com/Harini-R-2007/Online-Parking-Reservation-System-with-AI-Chatbot' },
+  { name: 'Intelligent Land Record Digitization & Validation System',
+    desc: 'An AI-based system that digitizes land documents with OCR, extracts key land details and validates them against reference records and cadastral data. It detects mismatches and reports a validation status.',
+    tech: ['AI', 'OCR'],
+    role: 'Team Lead. Led the team and worked with them on development.',
+    demo: 'https://drive.google.com/file/d/1dnJRjel1_82Rzz-pgw2w9upWcICyn3Hc/view?usp=drivesdk' },
+]
+export const experience: { role: string; org: string; duration?: string; desc: string; tech?: string[]; github?: string }[] = [
+  { role: 'Full Stack Developer Intern', org: 'MindfulAI Technologies', duration: '26 Dec 2025 to 9 Jan 2026',
+    desc: 'Recreated the company website, working on its development and implementation with frontend technologies.',
+    tech: ['HTML', 'CSS', 'JavaScript'], github: 'https://github.com/Harini-R-2007/MindfulAI-Intelligent-Solutions' },
+  { role: 'Python Intern', org: 'NextGen Solutions', duration: '15 Apr to 12 May 2025 (1 month)',
+    desc: 'Completed a one-month internship working on Python-based development tasks.' },
+]
+export const achievements = [
+  '3rd place, Prompt Engineering Challenge, Prince Shri Venkateshwara Padmavathy Engineering College, Chennai',
+  'Selected in the internal round of Smart India Hackathon (SIH) 2025 and 2026',
+  'Cleared Level 1 and Level 2 of the National Level Srinivasa Ramanujan Competition',
+  'Solved 230+ problems on SkillRack',
+  'Presented the paper "Accident Prevention System via Cardiac Response" at a technical symposium',
+  'Participated in HackIndia BioHack, SIMATS, Chennai',
+  'Participated in HackIndia 2025, Mailam Engineering College',
+  'Participated in the Mini Hackathon, Prince Shri Venkateshwara Padmavathy Engineering College, Chennai',
+  'Attended a workshop on IoT and Embedded Systems at IIT Research Park',
+]
+export type Certificate = { id: string; title: string; org: string; date: string; verify?: string; credentialId?: string }
+// Order here = order in the gallery. Images: public/certificates/<id>.jpg and <id>-thumb.jpg
+export const certificates: Certificate[] = [
+  { id: 'ccna', title: 'CCNA: Introduction to Networks', org: 'Cisco Networking Academy', date: '19 Aug 2025' },
+  { id: 'hardware', title: 'Computer Hardware Basics', org: 'Cisco Networking Academy', date: '15 Jun 2026', credentialId: 'd9d75e42-299c-4d00-9cdb-c9254bd574eb' },
+  { id: 'sql', title: 'SQL (Basic)', org: 'HackerRank', date: '12 Aug 2025', credentialId: '2AAD8B35F6FC' },
+  { id: 'guvi', title: 'Python', org: 'GUVI', date: '22 Sep 2024' },
+  { id: 'skillrack', title: 'Python 3.x Programming Course (Hands-On)', org: 'SkillRack', date: '11 Jul 2026', verify: 'https://www.skillrack.com/cert/629908/WLW' },
+  { id: 'skillrack-50', title: 'Python3.x: 50 Very-Easy Challenges', org: 'SkillRack', date: '18 Jul 2026', verify: 'https://www.skillrack.com/cert/631276/YQV' },
+  { id: 'ibm', title: 'Getting Started with Artificial Intelligence', org: 'IBM SkillsBuild', date: '20 Feb 2026', verify: 'https://www.credly.com/badges/364a4acf-0f16-4a14-bb10-912f9beb46cc' },
+  { id: 'infosys-ai', title: 'Artificial Intelligence for All', org: 'Infosys Springboard', date: '28 Jan 2026' },
+  { id: 'greatlearning', title: 'Learn Vibe Coding with AI Tools', org: 'Great Learning', date: '16 Aug 2025', verify: 'https://www.mygreatlearning.com/certificate/FUVBFFXZ' },
+  { id: 'be10x', title: 'AI Tools Workshop', org: 'be10x', date: '27 Jul 2025' },
+  { id: 'tata-viz', title: 'Data Visualisation: Empowering Business with Effective Insights', org: 'TATA (Forage)', date: '9 Sep 2025' },
+  { id: 'tata-crucible', title: 'Tata Crucible Campus Quiz 2025, Prelims Level 1 (participation)', org: 'Internshala', date: '12 Nov 2025' },
+  { id: 'mindfulai', title: 'Internship completion: Full Stack Developer', org: 'MindfulAI Technologies', date: '26 Dec 2025 to 9 Jan 2026' },
+  { id: 'nextgen', title: 'Python Internship completion letter', org: 'NextGen Solutions', date: '15 Apr to 12 May 2025' },
+  { id: 'ramanujan-l1', title: 'Srinivasa Ramanujan Mathematical Competitions, Level 1 (Chapter Level)', org: 'ISTE Tamil Nadu Section', date: '19 and 20 Oct 2024' },
+  { id: 'ramanujan-l2', title: 'Srinivasa Ramanujan Mathematical Competitions, Level 2 (State Level)', org: 'ISTE Tamil Nadu Section', date: '9 and 10 Nov 2024' },
+  { id: 'biohack', title: 'Bio-Hack Hackathon (participation)', org: 'SIMATS Engineering', date: '25 Jul 2026' },
+  { id: 'xentrix-prompt', title: 'Prompt Engineering Challenge, 3rd Prize (Xentrix \'26)', org: 'Prince Shri Venkateshwara Padmavathy Engineering College', date: '26 Sep 2026' },
+  { id: 'xentrix-mini', title: 'Mini Hackathon, Xentrix \'26 (participation)', org: 'Prince Shri Venkateshwara Padmavathy Engineering College', date: '26 Sep 2026' },
+  { id: 'technovation-paper', title: 'Technovation 2K25, Paper Presentation (participation)', org: 'Mailam Engineering College', date: '27 Sep 2025' },
+  { id: 'technovation-workshop', title: 'Technovation 2K25, Workshop (participation)', org: 'Mailam Engineering College', date: '27 Sep 2025' },
+  { id: 'iot', title: 'IoT and Embedded System Workshop', org: 'Top Engineers, IIT Madras Research Park', date: '30 Aug 2025' },
+  { id: 'xai', title: 'International Seminar on Explainable AI (XAI) and Ethical AI', org: 'Krishnasamy College of Science, Arts & Management for Women', date: '23 Sep 2025' },
+  { id: 'bhumi', title: "Bhumi's Daan Utsav Campaign, 6 hours of volunteer service", org: 'Bhumi', date: 'Oct 2024' },
+  { id: 'iste', title: 'ISTE Student Membership', org: 'Indian Society for Technical Education', date: '9 Feb 2026 to 9 Feb 2030' },
+]
+export const otherCertifications: string[] = []
+export const education = [
+  ['Bachelor of Engineering (CSE)', 'IFET College of Engineering', '2028', 'CGPA 8.8 (up to 4th semester)'],
+  ['HSC', 'St Joseph Matric Higher Secondary School, Cuddalore', '2024', '82%'],
+  ['SSLC', 'St Joseph Matric Higher Secondary School, Cuddalore', '2022', '88.6%'],
+]
